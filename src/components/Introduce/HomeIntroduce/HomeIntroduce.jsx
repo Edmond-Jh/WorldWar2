@@ -23,7 +23,7 @@ const HomeIntroduce = () => {
                 و با این دو اتحاد نظامی، یک جنگ تمام‌عیار به راه انداختند که در
                 اثر آن، بیش از صد میلیون نفر در بیش از ۳۰ کشور جهان درگیر شدند
               </p>
-              {/* <video
+               <video
                 width="700"
                 controls
                 className="headvideo"
@@ -33,7 +33,7 @@ const HomeIntroduce = () => {
               >
                 <source src={aboutww2} type="video/mp4" />
                 Your browser does not support HTML video.
-              </video> */}
+              </video> 
               <h3>خلاصه ی علت وقوع جنگ</h3>
             </div>
           </div>
