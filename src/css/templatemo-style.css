@@ -551,15 +551,10 @@ body {
 }
 
 .welcomer {
-  /* font-size: calc(-147px + 18vh); */
-  /* line-height: calc(20px + 20vh); */
-  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-  color: #fccaff; */
   text-shadow: 0 0 5px #941212, 0 0 15px #12d0d6, 0 0 20px #ff0000,
     0 0 40px #ff0000, 0 0 60px #ff0000, 0 0 10px #00d9ff, 0 0 98px #ff0000;
   color: #fff6a9;
-  /* font-family: "Sacramento", cursive; */
+
   text-align: center;
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
