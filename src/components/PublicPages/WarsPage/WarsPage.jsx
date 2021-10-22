@@ -13,11 +13,11 @@ const WarsPage = () => {
       })
       .then(setData);
   }, []);
-  console.log(data);
+
   return (
     <>
       <section className={Classes.WarCardSEC}>
-        <Row>
+        <Row style={{ paddingTop: "20px" }}>
           {!data ? (
             <h1>Loading...</h1>
           ) : (

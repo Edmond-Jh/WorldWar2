@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <audio id="myaudio">
         <source src={audioT} type="audio/ogg" />
-        Your browser does not support the audio tag.s
+        Your browser does not support the audio tag.
       </audio>
       <Header />
       <HomeIntroduce />

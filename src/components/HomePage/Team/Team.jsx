@@ -42,7 +42,6 @@ const Team = () => {
                   <img
                     src={manstein?.fields.gernealpicture[0].fields.file.url}
                     alt="profile one"
-                    loading="lazy"
                   />
                 </div>
 
@@ -63,7 +62,6 @@ const Team = () => {
                   </div>
                   <img
                     src={dwait?.fields.gernealpicture[0].fields.file.url}
-                    loading="lazy"
                     alt="profile one"
                   />
                 </div>
@@ -85,7 +83,6 @@ const Team = () => {
                   </div>
                   <img
                     src={zhokov?.fields.gernealpicture[0].fields.file.url}
-                    loading="lazy"
                     alt="profile one"
                   />
                 </div>

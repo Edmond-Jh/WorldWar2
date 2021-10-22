@@ -7,14 +7,23 @@ const SingleWarPage = () => {
   return (
     <>
       <section className={Classes.WarSection}>
-        <h1>Salam</h1>
-        <h2>asdasd</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos,
-          laudantium! Voluptatum quod blanditiis saepe nesciunt, quibusdam harum
-          libero pariatur quae dicta voluptatem explicabo. Deserunt repellat
-          repellendus perferendis consectetur, possimus iure.
-        </p>
+        <div className={Classes.LeftSide}>
+          <section className={Classes.Description}></section>
+        </div>
+        <div className={Classes.RightSide}>
+          <section className={Classes.WarName}></section>
+          <section className={Classes.WarPicture}></section>
+          <section className={Classes.WarDetails}>
+            <section className={Classes.WarDeath}></section>
+            <section className={Classes.WarSoldiers}></section>
+            <section className={Classes.GeneralsCount}></section>
+          </section>
+        </div>
+      </section>
+
+      <section className={Classes.WarFooterSection}>
+        <section className={Classes.Countries}></section>
+        <section className={Classes.Generals}></section>
       </section>
     </>
   );

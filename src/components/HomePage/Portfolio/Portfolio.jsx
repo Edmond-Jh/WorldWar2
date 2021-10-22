@@ -54,7 +54,6 @@ const Portfolio = () => {
                     data-lightbox-gallery="portfolio-gallery"
                   >
                     <img
-                      loading="lazy"
                       style={{
                         width: "100%",
                         height: "148px",
@@ -86,7 +85,6 @@ const Portfolio = () => {
                     data-lightbox-gallery="portfolio-gallery"
                   >
                     <img
-                      loading="lazy"
                       style={{
                         width: "100%",
                         height: "148px",

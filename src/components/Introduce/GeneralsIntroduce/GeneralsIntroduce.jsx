@@ -7,14 +7,14 @@ const GeneralsIntroduce = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 title">
-              <h4>WELCOME TO IMPULSE</h4>
-              <h2>Branding &amp; Digital Studio</h2>
+              <h4>در پشت صحنه ی جنگ</h4>
+              <h2>ژنرال ها </h2>
               <hr />
               <p>
-                Impulse is a mobile friendly Bootstrap v3.3.5 layout from
-                templatemo. Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore
-                magna aliquam erat volutpat.
+                درجنگ ژنرال ها تاثیر مستقیم بر استراتژیک و بکار امدن مستقیم
+                نیروها داشتند کسانی که توانستند به بهترین نحو ممکن عمل کنند ,
+                جنگ همانند خودرویست که راننده ی آن ژنرال است (ادموند فونیش
+                جانسون)
               </p>
             </div>
           </div>

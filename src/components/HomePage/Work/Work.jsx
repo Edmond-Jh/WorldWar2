@@ -14,7 +14,6 @@ import gif4 from "../../../images/gif4.gif";
 import gifimg4 from "../../../images/gif4.jpg";
 const Work = () => {
   const [data, setData] = useState(null);
-
   useEffect(() => {
     contentful
       .getEntries({
@@ -23,7 +22,6 @@ const Work = () => {
       })
       .then((result) => setData(result.items));
   }, []);
-
   let index1;
   let index2;
   let index3;
@@ -52,39 +50,44 @@ const Work = () => {
 
             <div className="col-md-8 col-sm-8">
               <div className="col-md-6 col-sm-6 bg-red p-0 gif-cont ">
-                <Link to={`/wars/${index1?.sys.id}`}>
-                  <img className="static" src={gifimg} loading="lazy" />
-                  <img className="active" src={gif} loading="lazy" />
+                <a href="/">
+                  <figure>
+                    <img className="static" src={gifimg} />
+                    <img className="active" src={gif} />
+                  </figure>
                   <div></div>
                   <span>{index1?.fields.title}</span>
-                </Link>
+                </a>
               </div>
               <div className="col-md-6 col-sm-6 bg-black gif-cont ">
-                <Link to={`/wars/${index2?.sys.id}`}>
-                  <img className="static" src={gifimg2} loading="lazy" />
-                  <img className="active" src={gif2} loading="lazy" />
-
+                <Link to={`/war/`}>
+                  <figure>
+                    <img className="static" src={gifimg2} />
+                    <img className="active" src={gif2} />
+                  </figure>
                   <div></div>
                   <span>{index2?.fields.title}</span>
                 </Link>
               </div>
               <div className="col-md-6 col-sm-6 bg-black gif-cont ">
-                <Link to={`/wars/${index3?.sys.id}`}>
-                  <img className="static" src={gifimg3} loading="lazy" />
-                  <img className="active" src={gif3} loading="lazy" />
-
+                <a href="/">
+                  <figure>
+                    <img className="static" src={gifimg3} />
+                    <img className="active" src={gif3} />
+                  </figure>
                   <div></div>
                   <span>{index3?.fields.title}</span>
-                </Link>
+                </a>
               </div>
               <div className="col-md-6 col-sm-6 bg-red gif-cont ">
-                <Link to={`/wars/${index4?.sys.id}`}>
-                  <img className="static" src={gifimg4} loading="lazy" />
-                  <img className="active" src={gif4} loading="lazy" />
-
+                <a href="/">
+                  <figure>
+                    <img className="static" src={gifimg4} />
+                    <img className="active" src={gif4} />
+                  </figure>
                   <div></div>
                   <span>{index4?.fields.title}</span>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

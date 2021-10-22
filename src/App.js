@@ -40,7 +40,7 @@ function App() {
           <Contact />
         </Route>
 
-        {/* <Route path="/country/:id"></Route>
+        <Route path="/country/:id"></Route>
 
         <Route path="/allie/akbar" exact>
           <AlliesSingle />
@@ -48,7 +48,7 @@ function App() {
         <Route path="/war/:id">
           <SingleWarPage />
         </Route>
-        <Route path="/general/:id"></Route>*/}
+        <Route path="/general/:id"></Route>
       </Switch>
     </Layout>
   );

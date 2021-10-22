@@ -1,0 +1,96 @@
+.WarCardSEC {
+  div {
+    display: inline-block;
+  }
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  .WarCard {
+    overflow: hidden;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    width: 330px;
+    height: 650px;
+    background-color: rgb(119, 119, 119);
+    transition: all 0.2s ease-in-out;
+  }
+  .WarCard:hover {
+    transform: translate3D(0, -1px, 0) scale(1.03);
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .BGCardPic {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 330px;
+    height: 400px;
+  }
+  .BGCardPic img {
+    transform-origin: 50% 65%;
+    transition: transform 5s, filter 3s ease-in-out;
+    // filter: brightness(100%);
+  }
+  .BGCardPic:hover img {
+    filter: brightness(100%);
+    transform: scale(1.4);
+  }
+  .history {
+    display: flex;
+    justify-content: center;
+    .historyMark {
+      font-family: "MmdBold";
+      width: 100%;
+      background-color: rgba(8, 8, 8, 0.794);
+      height: 25px;
+      z-index: 10;
+      position: absolute;
+      top: 0px;
+      // left: -40px;
+      // transform: rotate(-50deg);
+      color: white;
+    }
+  }
+  .CardTitle {
+    width: 230px;
+    text-align: center;
+    h2 {
+      font-size: 25px;
+      color: #000;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+  }
+  .DescriptionCard {
+    font-family: "MmdReg";
+    width: 95%;
+    height: 113px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .CardBTN {
+    width: 400px;
+    margin-left: -170px;
+    margin-top: 5px;
+    button {
+      position: absolute;
+      background-color: rgb(219, 219, 219);
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 20px;
+      width: 110px;
+      font-family: "MmdBold";
+      height: 30px;
+      bottom: 20px;
+      left: 20px;
+      color: red;
+    }
+    button:hover {
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+  }
+}
