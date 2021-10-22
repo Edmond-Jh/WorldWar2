@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import contentful from "../../../Helpers/contentful";
+import "./Sides.css";
 const Portfolio = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
@@ -37,63 +38,58 @@ const Portfolio = () => {
 
             <div className="col-md-12 col-sm-12"></div>
             <p
-              style={{ fontSize: "35px", fontFamily: "Mmdreg" }}
+              style={{
+                fontSize: "35px",
+                fontFamily: "Mmdreg",
+                margin: "30px 0px",
+              }}
               className="col-md-12"
-            >
-              متحدین
-            </p>
-            {th4Allies?.map((data) => {
-              return (
-                <div
-                  key={data.fields.name}
-                  className="col-md-3 col-sm-3 wow fadeIn"
-                  data-wow-delay="0.6s"
-                >
-                  <a
-                    href="images/portfolio-img1.jpg"
-                    data-lightbox-gallery="portfolio-gallery"
-                  >
-                    <img
-                      style={{
-                        width: "100%",
-                        height: "148px",
-                        objectFit: "cover",
-                      }}
-                      src={data?.fields.flag.fields.file.url}
-                      alt="portfolio img"
-                    />
-                  </a>
-                </div>
-              );
-            })}
-
-            <p
-              className="col-md-12"
-              style={{ fontSize: "35px", fontFamily: "Mmdreg" }}
             >
               متفقین
             </p>
+            <div class="col-md-12 col-sm-12 wow fadeIn">
+              {th4Allies?.map((data) => {
+                return (
+                  <div
+                    class="cardak col-md-3 col-sm-3 wow fadeIn"
+                    key={data.fields.name}
+                  >
+                    <img src={data?.fields.flag.fields.file.url} />
+                    <div class="info">
+                      <h3>{data.fields.name}</h3>
+
+                      <button>Read More</button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <p
+              className="col-md-12"
+              style={{
+                fontSize: "35px",
+                fontFamily: "Mmdreg",
+                margin: "30px 0px",
+              }}
+            >
+              متحدین
+            </p>
             {th4Axis?.map((data) => {
+              console.log(data);
               return (
                 <div
+                  class="cardak col-md-3 col-sm-3 wow fadeIn"
                   key={data.fields.name}
-                  className="col-md-3 col-sm-3 wow fadeIn"
-                  data-wow-delay="0.6s"
                 >
-                  <a
-                    href="images/portfolio-img1.jpg"
-                    data-lightbox-gallery="portfolio-gallery"
-                  >
-                    <img
-                      style={{
-                        width: "100%",
-                        height: "148px",
-                        objectFit: "cover",
-                      }}
-                      src={data?.fields.flag.fields.file.url}
-                      alt="portfolio img"
-                    />
-                  </a>
+                  <img
+                    src={data?.fields.flag.fields.file.url}
+                    style={{ objectFit: "cover" }}
+                  />
+                  <div class="info">
+                    <h3>{data.fields.name}</h3>
+
+                    <button>بیشتر بدانید</button>
+                  </div>
                 </div>
               );
             })}

@@ -4,7 +4,7 @@ import Classes from "./GeneralPage.module.scss";
 import contentful from "../../../Helpers/contentful";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 import { Link } from "react-router-dom";
-import none from "./none.png";
+
 const GeneralsPaga = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
@@ -38,7 +38,6 @@ const GeneralsPaga = () => {
                 </div>
                 <div className={Classes.history}>
                   <div className={Classes.historyMark}>
-                    {console.log(r)}
                     <p>{r.fields.birthdathe}</p>
                   </div>
                 </div>

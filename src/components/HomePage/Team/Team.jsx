@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import contentful from "../../../Helpers/contentful";
 import "./Team.scss";
+
 const Team = () => {
   const [data, setData] = useState(null);
   useEffect(() => {

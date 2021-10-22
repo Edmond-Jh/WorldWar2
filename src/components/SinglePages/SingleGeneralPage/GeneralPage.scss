@@ -1,0 +1,167 @@
+.card-wrappers {
+  height: 500px;
+  position: relative;
+}
+.card-wrappers2 {
+  height: 209px;
+  position: relative;
+}
+
+.headcards {
+  display: flex;
+  justify-content: center;
+
+  .headcardchilds {
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.623);
+    height: 30px;
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    // left: -40px;
+    // transform: rotate(-50deg);
+    color: white;
+
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.65);
+    p {
+      font-family: "MmdReg";
+      font-size: 20px;
+      margin: 1px;
+    }
+  }
+}
+.footercard {
+  display: flex;
+  justify-content: center;
+  .footercardchilds {
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.603);
+    height: 30px;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    // left: -40px;
+    // transform: rotate(-50deg);
+    color: white;
+  }
+}
+.cards {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 450px;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.5s;
+
+  .card-imagess {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #000;
+    transition: 0.5s;
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &:hover img {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+}
+.cards2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.5s;
+
+  .card-imagess2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #000;
+    transition: 0.5s;
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &:hover img {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+}
+
+.cards:hover .card-images {
+  transform: translateY(-100px);
+  transition: all 0.9s;
+}
+
+/**** Social Icons *****/
+
+.cards:hover .social-icons li a {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.card:hover li:nth-child(1) a {
+  transition-delay: 0.1s;
+}
+.card:hover li:nth-child(2) a {
+  transition-delay: 0.2s;
+}
+.card:hover li:nth-child(3) a {
+  transition-delay: 0.3s;
+}
+.card:hover li:nth-child(4) a {
+  transition-delay: 0.4s;
+}
+
+/**** Personal Details ****/
+
+.detailss {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 120px;
+  z-index: 1;
+  padding: 10px;
+  h3 {
+    color: black;
+  }
+  h2 {
+    margin-top: 40px;
+    font-family: "MmdBold";
+    font-size: 20px;
+    padding-top: 0;
+    text-align: center;
+    color: black;
+
+    .job-title {
+      font-size: 1rem;
+      line-height: 2.5rem;
+      color: #333;
+      font-weight: 300;
+    }
+  }
+}
