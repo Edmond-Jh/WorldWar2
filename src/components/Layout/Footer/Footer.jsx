@@ -28,20 +28,6 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="fa fa-behance wow bounceIn"
-                    data-wow-delay="0.9s"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="fa fa-dribbble wow bounceIn"
-                    data-wow-delay="0.9s"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
                     className="fa fa-github wow bounceIn"
                     data-wow-delay="0.9s"
                   ></a>

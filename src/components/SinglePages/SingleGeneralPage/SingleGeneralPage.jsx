@@ -10,12 +10,7 @@ const SingleGeneralPage = () => {
   const params = useParams();
   console.log(params);
   useEffect(() => {
-    contentful
-      .getEntry({
-        content_type: "general",
-        id: params.id,
-      })
-      .then(setData);
+    contentful.getEntry(`${params.id}`).then(setData);
   }, []);
   if (data) {
     console.log(data);
