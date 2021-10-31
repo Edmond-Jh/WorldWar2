@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import contentful from "../../../Helpers/contentful";
 import "./Sides.css";
-const Portfolio = () => {
+const Sides = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
     contentful
@@ -13,15 +14,13 @@ const Portfolio = () => {
 
   const allies = data?.filter((data) => data.fields.sidename === "متفقین");
   const axis = data?.filter((data) => data.fields.sidename === "متحدین");
+
   let th4Allies;
   let th4Axis;
   if (data) {
-    th4Allies = allies[0];
-    th4Axis = axis[0];
+    th4Allies = allies[0].fields.sidecountry.slice(0, 4);
+    th4Axis = axis[0].fields.sidecountry.slice(0, 4);
   }
-  th4Allies = th4Allies?.fields.sidecountry.slice(0, 4);
-  th4Axis = th4Axis?.fields.sidecountry.slice(0, 4);
-
   return (
     <>
       <div id="portfolio">
@@ -57,8 +56,9 @@ const Portfolio = () => {
                     <img src={data?.fields.flag.fields.file.url} />
                     <div class="info">
                       <h3>{data.fields.name}</h3>
-
-                      <button>Read More</button>
+                      <Link to={`/countries/${data?.sys.id}`}>
+                        <button>Read More</button>
+                      </Link>
                     </div>
                   </div>
                 );
@@ -75,7 +75,6 @@ const Portfolio = () => {
               متحدین
             </p>
             {th4Axis?.map((data) => {
-              console.log(data);
               return (
                 <div
                   class="cardak col-md-3 col-sm-3 wow fadeIn"
@@ -88,7 +87,9 @@ const Portfolio = () => {
                   <div class="info">
                     <h3>{data.fields.name}</h3>
 
-                    <button>بیشتر بدانید</button>
+                    <Link to={`/countries/${data?.sys.id}`}>
+                      <button>Read More</button>
+                    </Link>
                   </div>
                 </div>
               );
@@ -99,4 +100,4 @@ const Portfolio = () => {
     </>
   );
 };
-export default Portfolio;
+export default Sides;

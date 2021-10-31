@@ -55,7 +55,7 @@ const WarsPage = () => {
                     </p>
                   </div>
                   <div className={Classes.CardBTN}>
-                    <Link to={`war/${r.sys.id}`}>
+                    <Link to={`wars/${r.sys.id}`}>
                       <button>...بیشتر بدانیم</button>
                     </Link>
                   </div>

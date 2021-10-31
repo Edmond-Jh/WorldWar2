@@ -49,8 +49,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/allies">
-                  <p>Allies</p>
+                <Link to="/Sides">
+                  <p>Sides</p>
                 </Link>
               </li>
               <li>

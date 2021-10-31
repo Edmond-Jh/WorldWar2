@@ -3,9 +3,7 @@ import aboutww2 from "../../../images/aboutww2.mp4";
 const HomeIntroduce = () => {
   function funcstop(e) {
     let audio = document.getElementById("myaudio");
-    console.log(e.target);
     audio.pause();
-    console.log(audio);
   }
   return (
     <>

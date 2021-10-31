@@ -1,13 +1,13 @@
 import React from "react";
 import Contact from "../../components/Contact/Contact";
-import Team from "../../components/HomePage/Team/Team";
-import Work from "../../components/HomePage/Work/Work";
-import Portfolio from "../../components/HomePage/Portfolio/Portfolio";
+import Generals from "../../components/HomePage/Team/Generals";
+import Wars from "../../components/HomePage/Work/Wars";
+import Sides from "../../components/HomePage/Portfolio/Sides";
 import HomeIntroduce from "../../components/Introduce/HomeIntroduce/HomeIntroduce";
-// import Price from "../../components/HomePage/Price/Price";
 import Header from "../../components/Layout/Header/Header";
 import audioT from "../../images/Tirailleur.mp3";
 const Home = () => {
+  window.scrollTo(0, 0);
   return (
     <>
       <audio id="myaudio">
@@ -16,10 +16,9 @@ const Home = () => {
       </audio>
       <Header />
       <HomeIntroduce />
-      <Work />
-      <Team />
-      <Portfolio />
-      {/* <Price /> */}
+      <Wars />
+      <Generals />
+      <Sides />
       <Contact />
     </>
   );

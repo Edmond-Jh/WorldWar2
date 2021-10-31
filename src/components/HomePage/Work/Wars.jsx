@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
 import contentful from "../../../Helpers/contentful";
+
 import gif from "../../../images/gif1.gif";
 import gifimg from "../../../images/gif1.jpg";
 
@@ -12,7 +14,8 @@ import gifimg3 from "../../../images/gif3.jpg";
 
 import gif4 from "../../../images/gif4.gif";
 import gifimg4 from "../../../images/gif4.jpg";
-const Work = () => {
+
+const Wars = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
     contentful
@@ -50,17 +53,17 @@ const Work = () => {
 
             <div className="col-md-8 col-sm-8">
               <div className="col-md-6 col-sm-6 bg-red p-0 gif-cont ">
-                <a href="/">
+                <Link to={`/wars/${index1?.sys.id}`}>
                   <figure>
                     <img className="static" src={gifimg} />
                     <img className="active" src={gif} />
                   </figure>
                   <div></div>
                   <span>{index1?.fields.title}</span>
-                </a>
+                </Link>
               </div>
               <div className="col-md-6 col-sm-6 bg-black gif-cont ">
-                <Link to={`/war/`}>
+                <Link to={`/wars/${index2?.sys.id}`}>
                   <figure>
                     <img className="static" src={gifimg2} />
                     <img className="active" src={gif2} />
@@ -70,24 +73,24 @@ const Work = () => {
                 </Link>
               </div>
               <div className="col-md-6 col-sm-6 bg-black gif-cont ">
-                <a href="/">
+                <Link to={`/wars/${index3?.sys.id}`}>
                   <figure>
                     <img className="static" src={gifimg3} />
                     <img className="active" src={gif3} />
                   </figure>
                   <div></div>
                   <span>{index3?.fields.title}</span>
-                </a>
+                </Link>
               </div>
               <div className="col-md-6 col-sm-6 bg-red gif-cont ">
-                <a href="/">
+                <Link to={`/wars/${index4?.sys.id}`}>
                   <figure>
                     <img className="static" src={gifimg4} />
                     <img className="active" src={gif4} />
                   </figure>
                   <div></div>
                   <span>{index4?.fields.title}</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -96,4 +99,4 @@ const Work = () => {
     </>
   );
 };
-export default Work;
+export default Wars;
