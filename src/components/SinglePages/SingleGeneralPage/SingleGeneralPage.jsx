@@ -43,7 +43,7 @@ const SingleGeneralPage = () => {
               </div>
 
               <div className="country col-md-12 card-wrappers2 ">
-                <Link to={`/country/${data?.fields.Nationality.sys.id}`}>
+                <Link to={`/countries/${data?.fields.Nationality.sys.id}`}>
                   <div className="cards2">
                     <div className="card-imagess2">
                       <div className="footercard">

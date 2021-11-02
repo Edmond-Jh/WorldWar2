@@ -46,15 +46,15 @@ const Sides = () => {
             >
               متفقین
             </p>
-            <div class="col-md-12 col-sm-12 wow fadeIn">
+            <div className="col-md-12 col-sm-12 wow fadeIn">
               {th4Allies?.map((data) => {
                 return (
                   <div
-                    class="cardak col-md-3 col-sm-3 wow fadeIn"
+                    className="cardak col-md-3 col-sm-3 wow fadeIn"
                     key={data.fields.name}
                   >
                     <img src={data?.fields.flag.fields.file.url} />
-                    <div class="info">
+                    <div className="info">
                       <h3>{data.fields.name}</h3>
                       <Link to={`/countries/${data?.sys.id}`}>
                         <button>Read More</button>
@@ -77,14 +77,14 @@ const Sides = () => {
             {th4Axis?.map((data) => {
               return (
                 <div
-                  class="cardak col-md-3 col-sm-3 wow fadeIn"
+                  className="cardak col-md-3 col-sm-3 wow fadeIn"
                   key={data.fields.name}
                 >
                   <img
                     src={data?.fields.flag.fields.file.url}
                     style={{ objectFit: "cover" }}
                   />
-                  <div class="info">
+                  <div className="info">
                     <h3>{data.fields.name}</h3>
 
                     <Link to={`/countries/${data?.sys.id}`}>
