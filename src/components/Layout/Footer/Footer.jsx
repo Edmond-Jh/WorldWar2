@@ -49,7 +49,9 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-12 col-sm-12 copyright">
-              <p>Copyright © 2022 Ulrich Team | All Right reversed.</p>
+              <p>
+                Copyright © 2022 Mohamad Hossein Nazari | All Right reversed.
+              </p>
             </div>
           </div>
         </div>
